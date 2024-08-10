@@ -5,6 +5,7 @@ Just a quick and dirty fork of https://github.com/asagi4/ComfyUI-Adaptive-Guidan
 
 I recommend skipping 2-6 initial steps. Experiment and have fun.
 
+![A very important message I am sorry if you are blind and can not read it.](https://i.redd.it/9iuntj1goca91.jpg)
 
 ## What
 
