@@ -3,6 +3,8 @@
 
 Just a quick and dirty fork of https://github.com/asagi4/ComfyUI-Adaptive-Guidance to enable very trained Flux-dev loras to work properly. I think if you train them too hard, they essentially un-distill the model, so you need to introduce CFG back into your inference. But using CFG quickly fries the image. So to avoid having to do dynamic thresholding, which results in reduced output quality, you can now skip applying cfg to the first few steps.
 
+Of course this also speeds up inference a little, which is great if you want to finish generating your images before getting put into an assisted living facility by your grandkids.
+
 I recommend skipping 2-6 initial steps. Experiment and have fun.
 
 ![A very important message I am sorry if you are blind and can not read it.](https://i.redd.it/9iuntj1goca91.jpg)
