@@ -65,7 +65,7 @@ class Guider_AdaptiveGuidance(comfy.samplers.CFGGuider):
             uncond=uncond,
         )
 
-class AdaptiveGuidanceGuider:
+class AdaptiveGuidanceGuiderV2:
     @classmethod
     def INPUT_TYPES(s):
         return {
@@ -189,11 +189,11 @@ class PerpNegAGGuider:
         return (g,)
     
 NODE_CLASS_MAPPINGS = {
-    "AdaptiveGuidance": AdaptiveGuidanceGuider,
-    "PerpNegAdaptiveGuidanceGuider": PerpNegAGGuider,
+    "AdaptiveGuidanceV2": AdaptiveGuidanceGuiderV2,
+    #"PerpNegAdaptiveGuidanceGuider": PerpNegAGGuider,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "AdaptiveGuidance": "AdaptiveGuider",
-    "PerpNegAdaptiveGuidanceGuider": "PerpNegAdaptiveGuider",
+    "AdaptiveGuidanceV2": "AdaptiveGuiderWithInit",
+    #"PerpNegAdaptiveGuidanceGuider": "PerpNegAdaptiveGuider",
 }
