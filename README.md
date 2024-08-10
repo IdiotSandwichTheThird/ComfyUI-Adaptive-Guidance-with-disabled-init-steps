@@ -1,8 +1,10 @@
-# Adaptive Guidance for ComfyUI
+# Adaptive Guidance for ComfyUI with disabled CFG for initial steps
 
-An implementation of adaptive guidance for ComfyUI
 
-See https://bcv-uniandes.github.io/adaptiveguidance-wp/
+Just a quick and dirty fork of https://github.com/asagi4/ComfyUI-Adaptive-Guidance to enable very trained Flux-dev loras to work properly. I think if you train them too hard, they essentially un-distill the model, so you need to introduce CFG back into your inference. But using CFG quickly fries the image. So to avoid having to do dynamic thresholding, which results in reduced output quality, you can now skip applying cfg to the first few steps.
+
+I recommend skipping 2-6 initial steps. Experiment and have fun.
+
 
 ## What
 
